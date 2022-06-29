@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     display: flex;
    
@@ -316,4 +317,324 @@ body{
   .block2:hover{
       animation-play-state: paused;
       cursor: pointer;
+=======
+body{
+    display: flex;
+   
+    background: url(https://www.inteldig.com/wp-content/uploads/2019/06/blog-estrella.jpg);
+  }
+  .conteiner{
+    margin: auto;
+    transform: rotateX(80deg);
+    transform-style: preserve-3d;
+    position: relative;
+  /*   border: 1px solid darkred; border-radius:50%; */
+    width: 1000px;
+    height: 500px;
+  }
+  
+  /* СОЛНЦЕ */
+  .sun img{
+      width: 90px;
+      height: 90px;
+  }
+  .sun{
+    width: 10px;
+    height: 10px;
+    background: url(https://i.yapx.ru/EByG.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% - 45px);
+    border-radius: 50%;
+    transform: rotateX(-80deg);
+  }
+  
+  .block1{
+    border: 1px solid gold;
+    border-radius: 50%;
+    transform-style: preserve-3d;
+  }
+  .block2{
+    transform: rotateX(-90deg)
+  }
+  
+  /* МЕРКУРИЙ */
+  .mercury{
+    width: 100px;
+    height: 100px;  
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    animation: moves3 4s  linear infinite 1s;
+  }
+  @keyframes moves1{
+    0%{
+      transform: rotateZ( 0deg);
+      }
+    100%{
+      transform: rotateZ(-360deg);
+    }
+  }
+  .mercury_rotate{
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    animation: moves33 4s  linear infinite 1s;
+  }
+  @keyframes moves11 {
+  0% {transform: rotateX(-90deg) rotateY(360deg);
+    }
+  100% {transform: rotateX(-90deg) rotateY(0deg);
+  }
+  }
+  .mercury_img{
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* ВЕНЕРА */
+  .venus{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
+    animation: moves2 10s  linear infinite 1s;
+  }
+  @keyframes moves2{
+    0%{
+      transform: rotateZ( 0deg);
+      }
+    100%{
+      transform: rotateZ(-360deg);
+    }
+  }
+  .venus_rotate{
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    animation: moves22 10s  linear infinite 1s;
+  }
+  @keyframes moves22 {
+  0% {transform: rotateX(-90deg) rotateY(360deg);
+    }
+  100% {transform: rotateX(-90deg) rotateY(0deg);
+  }
+  }
+  .venus_img{
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* ЗЕМЛЯ */
+  .earth{
+    width: 210px;
+    height: 210px;
+    position: absolute;
+    top: calc(50% - 105px);
+    left: calc(50% - 105px);
+    animation: moves3 16s  linear infinite 1s;
+  }
+  @keyframes moves3{
+    0%{
+      transform: rotateZ( 0deg);
+      }
+    100%{
+      transform: rotateZ(-360deg);
+    }
+  }
+  .earth_rotate{
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    animation: moves33 16s  linear infinite 1s;
+  }
+  @keyframes moves33 {
+  0% {transform: rotateX(-90deg) rotateY(360deg);
+    }
+  100% {transform: rotateX(-90deg) rotateY(0deg);
+  }
+  }
+  .earth_img{
+    width: 35px;
+    height: 35px;
+  }
+  
+  /* МАРС */
+  .mars{
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: calc(50% - 130px);
+    left: calc(50% - 130px);
+    animation: moves4 30s  linear infinite 1s;
+  }
+  @keyframes moves4{
+    0%{
+      transform: rotateZ( 0deg);
+      }
+    100%{
+      transform: rotateZ(-360deg);
+    }
+  }
+  .mars_rotate{
+    position: absolute;
+    top: 0px;
+    left: 65px;
+    animation: moves44 30s  linear infinite 1s;
+  }
+  @keyframes moves44 {
+  0% {transform: rotateX(-90deg) rotateY(360deg);
+    }
+  100% {transform: rotateX(-90deg) rotateY(0deg);
+  }
+  }
+  .mars_img{
+    width: 25px;
+    height: 25px;
+  }
+  
+  /* ЮПИТЕР */
+  .jupiter{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: calc(50% - 175px);
+    left: calc(50% - 175px);
+    animation: moves5 90s  linear infinite 1s;
+  }
+  @keyframes moves5{
+    0%{
+      transform: rotateZ( 0deg);
+      }
+    100%{
+      transform: rotateZ(-360deg);
+    }
+  }
+  .jupiter_rotate{
+    position: absolute;
+    top: 0px;
+    left: 55px;
+    animation: moves55 90s  linear infinite 1s;
+  }
+  @keyframes moves55 {
+  0% {transform: rotateX(-90deg) rotateY(360deg);
+    }
+  100% {transform: rotateX(-90deg) rotateY(0deg);
+  }
+  }
+  .jupiter_img{
+    width: 60px;
+    height: 60px;
+  }
+  
+  /* САТУРН */
+  .saturn{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: calc(50% - 225px);
+    left: calc(50% - 225px);
+    animation: moves6 180s  linear infinite 1s;
+  }
+  @keyframes moves6{
+    0%{
+      transform: rotateZ( 0deg);
+      }
+    100%{
+      transform: rotateZ(-360deg);
+    }
+  }
+  .saturn_rotate{
+    position: absolute;
+    top: 0px;
+    left: 95px;
+    animation: moves66 180s  linear infinite 1s;
+  }
+  @keyframes moves66 {
+  0% {transform: rotateX(-90deg) rotateY(360deg);
+    }
+  100% {transform: rotateX(-90deg) rotateY(0deg);
+  }
+  }
+  .saturn_img{
+    width: 50px;
+    height: 50px;
+  }
+  /* УРАН */
+  .uranus{
+    width: 540px;
+    height: 540px;
+    position: absolute;
+    top: calc(50% - 270px);
+    left: calc(50% - 270px);
+    animation: moves7 360s  linear infinite 1s;
+  }
+  @keyframes moves7{
+    0%{
+      transform: rotateZ( 0deg);
+      }
+    100%{
+      transform: rotateZ(-360deg);
+    }
+  }
+  .uranus_rotate{
+    position: absolute;
+    top: 0px;
+    left: 130px;
+    animation: moves77 360s  linear infinite 1s;
+  }
+  @keyframes moves77 {
+  0% {transform: rotateX(-90deg) rotateY(360deg);
+    }
+  100% {transform: rotateX(-90deg) rotateY(0deg);
+  }
+  }
+  .uranus_img{
+    width: 45px;
+    height: 45px;
+  }
+  /* НЕПТУН */
+  .neptune{
+    width: 630px;
+    height: 630px;
+    position: absolute;
+    top: calc(50% - 315px);
+    left: calc(50% - 315px);
+    animation: moves8 720s  linear infinite 1s;
+  }
+  @keyframes moves8{
+    0%{
+      transform: rotateZ( 0deg);
+      }
+    100%{
+      transform: rotateZ(-360deg);
+    }
+  }
+  .neptune_rotate{
+    position: absolute;
+    top: 0px;
+    left: 175px;
+    animation: moves88 720s  linear infinite 1s;
+  }
+  @keyframes moves88 {
+  0% {transform: rotateX(-90deg) rotateY(360deg);
+    }
+  100% {transform: rotateX(-90deg) rotateY(0deg);
+  }
+  }
+  .neptune_img{
+    width: 40px;
+    height: 40px;
+  }
+  .block1:hover{
+      animation-play-state: paused;
+  /*    cursor: pointer;  */
+  }
+  .block2:hover{
+      animation-play-state: paused;
+      cursor: pointer;
+>>>>>>> d823433c05a265bc67c1e47680040fb07ba62679
   }
