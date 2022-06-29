@@ -1,7 +1,7 @@
 body{
     display: flex;
    
-    background: url(https://www.inteldig.com/wp-content/uploads/2019/06/blog-estrella.jpg);
+    background: url(https://www.inteldig.com/wp-content/uploads/2019/06/blog-estrella.jpg) no-repeat center center/cover;
   }
   .conteiner{
     margin: auto;
